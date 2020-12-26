@@ -1,0 +1,25 @@
+|pre_cout2
+cout_01[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B_01[0] => inst3.IN0
+B_01[1] => inst4.IN0
+B_01[2] => inst5.IN0
+B_01[3] => inst6.IN0
+have_B_01 => inst3.IN1
+have_B_01 => 7404:inst7.2
+have_B_01 => inst4.IN1
+have_B_01 => inst5.IN1
+have_B_01 => inst6.IN1
+A_01[0] => inst.IN0
+A_01[1] => inst55.IN0
+A_01[2] => inst1.IN0
+A_01[3] => inst2.IN0
+
+
+|pre_cout2|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+

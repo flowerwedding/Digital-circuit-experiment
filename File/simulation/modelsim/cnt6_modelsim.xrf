@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, D:/quartusfile/File/cnt6.bdf
+source_file = 1, D:/quartusfile/File/db/cnt6.cbx.xml
+source_file = 1, d:/quartus/quartus/libraries/others/maxplus2/74390.bdf
+source_file = 1, d:/quartus/quartus/libraries/others/maxplus2/7408.bdf
+design_name = cnt6
+instance = comp, \q[3]~output\, q[3]~output, cnt6, 1
+instance = comp, \q[2]~output\, q[2]~output, cnt6, 1
+instance = comp, \q[1]~output\, q[1]~output, cnt6, 1
+instance = comp, \q[0]~output\, q[0]~output, cnt6, 1
+instance = comp, \clk~input\, clk~input, cnt6, 1

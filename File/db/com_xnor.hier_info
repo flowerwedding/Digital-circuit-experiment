@@ -1,0 +1,59 @@
+|com_xnor
+ans_01 <= 7485:inst5.AEBO
+clk_01[0] => 7485:inst5.A0
+clk_01[1] => 7485:inst5.A1
+clk_01[2] => 7485:inst5.A2
+clk_01[3] => 7485:inst5.A3
+ala_01[0] => 7485:inst5.B0
+ala_01[1] => 7485:inst5.B1
+ala_01[2] => 7485:inst5.B2
+ala_01[3] => 7485:inst5.B3
+
+
+|com_xnor|7485:inst5
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|com_xnor|7485:inst5|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+

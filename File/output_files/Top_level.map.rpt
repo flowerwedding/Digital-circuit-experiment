@@ -1,0 +1,872 @@
+Analysis & Synthesis report for Top_level
+Wed Dec 23 13:11:09 2020
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst2|7485:inst5
+ 13. Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst|7485:inst5
+ 14. Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst1|7485:inst5
+ 15. Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst3|7485:inst5
+ 16. Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst4|7485:inst5
+ 17. Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst5|7485:inst5
+ 18. Parameter Settings for User Entity Instance: time:inst67|com_xnor:inst4|7485:inst5
+ 19. Parameter Settings for User Entity Instance: time:inst67|com_xnor:inst5|7485:inst5
+ 20. Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst2|7485:inst5
+ 21. Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst|7485:inst5
+ 22. Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst1|7485:inst5
+ 23. Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst3|7485:inst5
+ 24. Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst4|7485:inst5
+ 25. Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst5|7485:inst5
+ 26. Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst
+ 27. Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst1
+ 28. Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst2
+ 29. Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst3
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Dec 23 13:11:09 2020      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; Top_level                                  ;
+; Top-level Entity Name              ; Top_level                                  ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 218                                        ;
+;     Total combinational functions  ; 202                                        ;
+;     Dedicated logic registers      ; 107                                        ;
+; Total registers                    ; 107                                        ;
+; Total pins                         ; 33                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16Q240C8       ;                    ;
+; Top-level entity name                                                      ; Top_level          ; Top_level          ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
+;     Processors 5-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                            ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------+---------+
+; jicun8.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/jicun8.bdf                          ;         ;
+; jicun4.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/jicun4.bdf                          ;         ;
+; sys_choice.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/sys_choice.bdf                      ;         ;
+; jicun.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/jicun.bdf                           ;         ;
+; inter.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/inter.bdf                           ;         ;
+; cnt12.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/cnt12.bdf                           ;         ;
+; cnt100.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/cnt100.bdf                          ;         ;
+; chron.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/chron.bdf                           ;         ;
+; fre_cin.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/fre_cin.bdf                         ;         ;
+; com_xnor.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/com_xnor.bdf                        ;         ;
+; compare.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/compare.bdf                         ;         ;
+; time.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/time.bdf                            ;         ;
+; seg_select.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/seg_select.bdf                      ;         ;
+; m100.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/m100.bdf                            ;         ;
+; fre_div.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/fre_div.bdf                         ;         ;
+; display.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/display.bdf                         ;         ;
+; dig_select.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/dig_select.bdf                      ;         ;
+; decoder.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/decoder.bdf                         ;         ;
+; cnt8.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/cnt8.bdf                            ;         ;
+; cnt60.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/cnt60.bdf                           ;         ;
+; cnt24.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/cnt24.bdf                           ;         ;
+; Top_level.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/quartusfile/File/Top_level.bdf                       ;         ;
+; 7404.bdf                         ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/7404.bdf   ;         ;
+; 7408.bdf                         ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/7408.bdf   ;         ;
+; 7485.tdf                         ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/7485.tdf   ;         ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/aglobal.inc  ;         ;
+; f7485.bdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/f7485.bdf  ;         ;
+; 74390.bdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/74390.bdf  ;         ;
+; 7432.bdf                         ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/7432.bdf   ;         ;
+; 74153.bdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/74153.bdf  ;         ;
+; tiaop.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/quartusfile/File/tiaop.bdf                           ;         ;
+; 74164.bdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/74164.bdf  ;         ;
+; 74138.bdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/74138.bdf  ;         ;
+; 7448.bdf                         ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/7448.bdf   ;         ;
+; 74151.tdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/74151.tdf  ;         ;
+; f74151.bdf                       ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/f74151.bdf ;         ;
+; pre_cout.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/quartusfile/File/pre_cout.bdf                        ;         ;
+; pre_cout2.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/quartusfile/File/pre_cout2.bdf                       ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 218                        ;
+;                                             ;                            ;
+; Total combinational functions               ; 202                        ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 58                         ;
+;     -- 3 input functions                    ; 46                         ;
+;     -- <=2 input functions                  ; 98                         ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 202                        ;
+;     -- arithmetic mode                      ; 0                          ;
+;                                             ;                            ;
+; Total registers                             ; 107                        ;
+;     -- Dedicated logic registers            ; 107                        ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 33                         ;
+; Embedded Multiplier 9-bit elements          ; 0                          ;
+; Maximum fan-out node                        ; fre_div:inst|74390:inst3|3 ;
+; Maximum fan-out                             ; 21                         ;
+; Total fan-out                               ; 821                        ;
+; Average fan-out                             ; 2.19                       ;
++---------------------------------------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+--------------+
+; |Top_level                 ; 202 (5)           ; 107 (0)      ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |Top_level                                                       ; work         ;
+;    |chron:inst100|         ; 33 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100                                         ; work         ;
+;       |cnt100:inst|        ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt100:inst                             ; work         ;
+;          |74390:inst1|     ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt100:inst|74390:inst1                 ; work         ;
+;       |cnt60:inst2|        ; 12 (1)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt60:inst2                             ; work         ;
+;          |7432:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt60:inst2|7432:inst3                  ; work         ;
+;          |74390:inst1|     ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt60:inst2|74390:inst1                 ; work         ;
+;       |cnt60:inst4|        ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt60:inst4                             ; work         ;
+;          |7432:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt60:inst4|7432:inst3                  ; work         ;
+;          |74390:inst1|     ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|chron:inst100|cnt60:inst4|74390:inst1                 ; work         ;
+;    |compare:inst48|        ; 9 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst48                                        ; work         ;
+;       |com_xnor:inst4|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst48|com_xnor:inst4                         ; work         ;
+;          |7485:inst5|      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst48|com_xnor:inst4|7485:inst5              ; work         ;
+;             |f7485:sub|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst48|com_xnor:inst4|7485:inst5|f7485:sub    ; work         ;
+;    |compare:inst54|        ; 11 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst54                                        ; work         ;
+;       |com_xnor:inst4|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst54|com_xnor:inst4                         ; work         ;
+;          |7485:inst5|      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst54|com_xnor:inst4|7485:inst5              ; work         ;
+;             |f7485:sub|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|compare:inst54|com_xnor:inst4|7485:inst5|f7485:sub    ; work         ;
+;    |display:inst5|         ; 46 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5                                         ; work         ;
+;       |cnt8:inst|          ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|cnt8:inst                               ; work         ;
+;          |74390:inst|      ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|cnt8:inst|74390:inst                    ; work         ;
+;       |decoder:inst3|      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|decoder:inst3                           ; work         ;
+;          |7448:inst|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|decoder:inst3|7448:inst                 ; work         ;
+;       |dig_select:inst4|   ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|dig_select:inst4                        ; work         ;
+;          |74138:inst|      ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|dig_select:inst4|74138:inst             ; work         ;
+;       |seg_select:inst1|   ; 28 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1                        ; work         ;
+;          |74151:inst1|     ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst1            ; work         ;
+;             |f74151:sub|   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst1|f74151:sub ; work         ;
+;          |74151:inst2|     ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst2            ; work         ;
+;             |f74151:sub|   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst2|f74151:sub ; work         ;
+;          |74151:inst3|     ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst3            ; work         ;
+;             |f74151:sub|   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst3|f74151:sub ; work         ;
+;          |74151:inst|      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst             ; work         ;
+;             |f74151:sub|   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|display:inst5|seg_select:inst1|74151:inst|f74151:sub  ; work         ;
+;    |fre_div:inst|          ; 39 (0)            ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst                                          ; work         ;
+;       |74390:inst3|        ; 9 (9)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst|74390:inst3                              ; work         ;
+;       |m100:inst1|         ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst|m100:inst1                               ; work         ;
+;          |74390:inst|      ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst|m100:inst1|74390:inst                    ; work         ;
+;       |m100:inst2|         ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst|m100:inst2                               ; work         ;
+;          |74390:inst|      ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst|m100:inst2|74390:inst                    ; work         ;
+;       |m100:inst|          ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst|m100:inst                                ; work         ;
+;          |74390:inst|      ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|fre_div:inst|m100:inst|74390:inst                     ; work         ;
+;    |jicun8:inst68|         ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68                                         ; work         ;
+;       |jicun4:inst4|       ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4                            ; work         ;
+;          |jicun:inst1|     ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst1                ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst1|74164:inst     ; work         ;
+;          |jicun:inst2|     ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst2                ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst2|74164:inst     ; work         ;
+;          |jicun:inst3|     ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst3                ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst3|74164:inst     ; work         ;
+;          |jicun:inst|      ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst                 ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst4|jicun:inst|74164:inst      ; work         ;
+;       |jicun4:inst5|       ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5                            ; work         ;
+;          |jicun:inst1|     ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst1                ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst1|74164:inst     ; work         ;
+;          |jicun:inst2|     ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst2                ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst2|74164:inst     ; work         ;
+;          |jicun:inst3|     ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst3                ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst3|74164:inst     ; work         ;
+;          |jicun:inst|      ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst                 ; work         ;
+;             |74164:inst|   ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|jicun8:inst68|jicun4:inst5|jicun:inst|74164:inst      ; work         ;
+;    |tiaop:inst95|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|tiaop:inst95                                          ; work         ;
+;       |74153:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|tiaop:inst95|74153:inst                               ; work         ;
+;    |time:inst67|           ; 58 (5)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67                                           ; work         ;
+;       |cnt12:inst3|        ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt12:inst3                               ; work         ;
+;          |7432:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt12:inst3|7432:inst3                    ; work         ;
+;          |74390:inst|      ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt12:inst3|74390:inst                    ; work         ;
+;       |cnt24:inst2|        ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt24:inst2                               ; work         ;
+;          |7432:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt24:inst2|7432:inst3                    ; work         ;
+;          |74390:inst|      ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt24:inst2|74390:inst                    ; work         ;
+;       |cnt60:inst1|        ; 12 (1)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt60:inst1                               ; work         ;
+;          |7432:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt60:inst1|7432:inst3                    ; work         ;
+;          |74390:inst1|     ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt60:inst1|74390:inst1                   ; work         ;
+;       |cnt60:inst|         ; 12 (1)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt60:inst                                ; work         ;
+;          |7432:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt60:inst|7432:inst3                     ; work         ;
+;          |74390:inst1|     ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|cnt60:inst|74390:inst1                    ; work         ;
+;       |sys_choice:inst12|  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|sys_choice:inst12                         ; work         ;
+;          |74153:inst1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|sys_choice:inst12|74153:inst1             ; work         ;
+;          |74153:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|sys_choice:inst12|74153:inst              ; work         ;
+;       |sys_choice:inst13|  ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|sys_choice:inst13                         ; work         ;
+;          |74153:inst1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|sys_choice:inst13|74153:inst1             ; work         ;
+;          |74153:inst|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_level|time:inst67|sys_choice:inst13|74153:inst              ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                           ;
++-----------------------------------------------------+----------------------------------------+
+; Register name                                       ; Reason for Removal                     ;
++-----------------------------------------------------+----------------------------------------+
+; jicun8:inst68|jicun4:inst1|jicun:inst3|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst1|jicun:inst3|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst1|jicun:inst2|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst1|jicun:inst2|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst1|jicun:inst1|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst1|jicun:inst1|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst1|jicun:inst|74164:inst|3  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst1|jicun:inst|74164:inst|4  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst3|74164:inst|3  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst3|74164:inst|4  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst2|74164:inst|3  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst2|74164:inst|4  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst1|74164:inst|3  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst1|74164:inst|4  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst|74164:inst|3   ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst|jicun:inst|74164:inst|4   ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst3|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst3|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst2|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst2|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst1|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst1|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst|74164:inst|3  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst3|jicun:inst|74164:inst|4  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst3|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst3|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst2|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst2|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst1|74164:inst|3 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst1|74164:inst|4 ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst|74164:inst|3  ; Stuck at VCC due to stuck port data_in ;
+; jicun8:inst68|jicun4:inst2|jicun:inst|74164:inst|4  ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 32              ;                                        ;
++-----------------------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                           ;
++-----------------------------------------------------+---------------------------+-----------------------------------------------------+
+; Register name                                       ; Reason for Removal        ; Registers Removed due to This Register              ;
++-----------------------------------------------------+---------------------------+-----------------------------------------------------+
+; jicun8:inst68|jicun4:inst1|jicun:inst3|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst1|jicun:inst3|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst1|jicun:inst2|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst1|jicun:inst2|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst1|jicun:inst1|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst1|jicun:inst1|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst1|jicun:inst|74164:inst|3  ; Stuck at VCC              ; jicun8:inst68|jicun4:inst1|jicun:inst|74164:inst|4  ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst|jicun:inst3|74164:inst|3  ; Stuck at VCC              ; jicun8:inst68|jicun4:inst|jicun:inst3|74164:inst|4  ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst|jicun:inst2|74164:inst|3  ; Stuck at VCC              ; jicun8:inst68|jicun4:inst|jicun:inst2|74164:inst|4  ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst|jicun:inst1|74164:inst|3  ; Stuck at VCC              ; jicun8:inst68|jicun4:inst|jicun:inst1|74164:inst|4  ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst|jicun:inst|74164:inst|3   ; Stuck at VCC              ; jicun8:inst68|jicun4:inst|jicun:inst|74164:inst|4   ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst3|jicun:inst3|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst3|jicun:inst3|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst3|jicun:inst2|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst3|jicun:inst2|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst3|jicun:inst1|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst3|jicun:inst1|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst3|jicun:inst|74164:inst|3  ; Stuck at VCC              ; jicun8:inst68|jicun4:inst3|jicun:inst|74164:inst|4  ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst2|jicun:inst3|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst2|jicun:inst3|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst2|jicun:inst2|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst2|jicun:inst2|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst2|jicun:inst1|74164:inst|3 ; Stuck at VCC              ; jicun8:inst68|jicun4:inst2|jicun:inst1|74164:inst|4 ;
+;                                                     ; due to stuck port data_in ;                                                     ;
+; jicun8:inst68|jicun4:inst2|jicun:inst|74164:inst|3  ; Stuck at VCC              ; jicun8:inst68|jicun4:inst2|jicun:inst|74164:inst|4  ;
+;                                                     ; due to stuck port data_in ;                                                     ;
++-----------------------------------------------------+---------------------------+-----------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 107   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 60    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Top_level|display:inst5|seg_select:inst1|74151:inst3|f74151:sub|81 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst2|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst|7485:inst5 ;
++------------------------+-------------+-----------------------------------------------+
+; Parameter Name         ; Value       ; Type                                          ;
++------------------------+-------------+-----------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                ;
++------------------------+-------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst1|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst3|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst4|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst48|com_xnor:inst5|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: time:inst67|com_xnor:inst4|7485:inst5 ;
++------------------------+-------------+---------------------------------------------+
+; Parameter Name         ; Value       ; Type                                        ;
++------------------------+-------------+---------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                     ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                              ;
++------------------------+-------------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: time:inst67|com_xnor:inst5|7485:inst5 ;
++------------------------+-------------+---------------------------------------------+
+; Parameter Name         ; Value       ; Type                                        ;
++------------------------+-------------+---------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                     ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                              ;
++------------------------+-------------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst2|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst|7485:inst5 ;
++------------------------+-------------+-----------------------------------------------+
+; Parameter Name         ; Value       ; Type                                          ;
++------------------------+-------------+-----------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                ;
++------------------------+-------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst1|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst3|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst4|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: compare:inst54|com_xnor:inst5|7485:inst5 ;
++------------------------+-------------+------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                           ;
++------------------------+-------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                 ;
++------------------------+-------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst ;
++------------------------+-------------+-------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                            ;
++------------------------+-------------+-------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                         ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                  ;
++------------------------+-------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst1 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst2 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst5|seg_select:inst1|74151:inst3 ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Dec 23 13:11:03 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Top_level -c Top_level
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file jicun8.bdf
+    Info (12023): Found entity 1: jicun8
+Info (12021): Found 1 design units, including 1 entities, in source file jicun4.bdf
+    Info (12023): Found entity 1: jicun4
+Info (12021): Found 1 design units, including 1 entities, in source file sys_choice.bdf
+    Info (12023): Found entity 1: sys_choice
+Info (12021): Found 1 design units, including 1 entities, in source file minu_time4.bdf
+    Info (12023): Found entity 1: minu_time4
+Info (12021): Found 1 design units, including 1 entities, in source file minu_time1.bdf
+    Info (12023): Found entity 1: minu_time1
+Info (12021): Found 1 design units, including 1 entities, in source file minu_time.bdf
+    Info (12023): Found entity 1: minu_time
+Info (12021): Found 1 design units, including 1 entities, in source file minu60.bdf
+    Info (12023): Found entity 1: minu60
+Info (12021): Found 1 design units, including 1 entities, in source file jicun.bdf
+    Info (12023): Found entity 1: jicun
+Info (12021): Found 1 design units, including 1 entities, in source file inter.bdf
+    Info (12023): Found entity 1: inter
+Info (12021): Found 1 design units, including 1 entities, in source file fre_cin3.bdf
+    Info (12023): Found entity 1: fre_cin3
+Info (12021): Found 1 design units, including 1 entities, in source file fre_cin2.bdf
+    Info (12023): Found entity 1: fre_cin2
+Info (12021): Found 1 design units, including 1 entities, in source file cnt12.bdf
+    Info (12023): Found entity 1: cnt12
+Info (12021): Found 1 design units, including 1 entities, in source file cnt100.bdf
+    Info (12023): Found entity 1: cnt100
+Info (12021): Found 1 design units, including 1 entities, in source file chron.bdf
+    Info (12023): Found entity 1: chron
+Info (12021): Found 1 design units, including 1 entities, in source file test.bdf
+    Info (12023): Found entity 1: test
+Info (12021): Found 1 design units, including 1 entities, in source file dou.bdf
+    Info (12023): Found entity 1: dou
+Info (12021): Found 1 design units, including 1 entities, in source file fre_cin.bdf
+    Info (12023): Found entity 1: fre_cin
+Info (12021): Found 1 design units, including 1 entities, in source file com_xnor.bdf
+    Info (12023): Found entity 1: com_xnor
+Info (12021): Found 1 design units, including 1 entities, in source file compare.bdf
+    Info (12023): Found entity 1: compare
+Info (12021): Found 1 design units, including 1 entities, in source file time.bdf
+    Info (12023): Found entity 1: time
+Info (12021): Found 1 design units, including 1 entities, in source file seg_select.bdf
+    Info (12023): Found entity 1: seg_select
+Info (12021): Found 1 design units, including 1 entities, in source file m100.bdf
+    Info (12023): Found entity 1: m100
+Info (12021): Found 1 design units, including 1 entities, in source file fre_div.bdf
+    Info (12023): Found entity 1: fre_div
+Info (12021): Found 1 design units, including 1 entities, in source file display.bdf
+    Info (12023): Found entity 1: display
+Info (12021): Found 1 design units, including 1 entities, in source file dig_select.bdf
+    Info (12023): Found entity 1: dig_select
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.bdf
+    Info (12023): Found entity 1: decoder
+Info (12021): Found 1 design units, including 1 entities, in source file cnt8.bdf
+    Info (12023): Found entity 1: cnt8
+Info (12021): Found 1 design units, including 1 entities, in source file cnt60.bdf
+    Info (12023): Found entity 1: cnt60
+Info (12021): Found 1 design units, including 1 entities, in source file cnt6.bdf
+    Info (12023): Found entity 1: cnt6
+Info (12021): Found 1 design units, including 1 entities, in source file cnt24.bdf
+    Info (12023): Found entity 1: cnt24
+Info (12021): Found 1 design units, including 1 entities, in source file bin_sec.bdf
+    Info (12023): Found entity 1: bin_sec
+Info (12021): Found 1 design units, including 1 entities, in source file bin_min.bdf
+    Info (12023): Found entity 1: bin_min
+Info (12021): Found 1 design units, including 1 entities, in source file bin_hour.bdf
+    Info (12023): Found entity 1: bin_hour
+Info (12021): Found 1 design units, including 1 entities, in source file top_level.bdf
+    Info (12023): Found entity 1: Top_level
+Info (12127): Elaborating entity "Top_level" for the top level hierarchy
+Info (12128): Elaborating entity "7404" for hierarchy "7404:inst66"
+Info (12130): Elaborated megafunction instantiation "7404:inst66"
+Info (12128): Elaborating entity "7408" for hierarchy "7408:inst49"
+Info (12130): Elaborated megafunction instantiation "7408:inst49"
+Info (12128): Elaborating entity "compare" for hierarchy "compare:inst48"
+Info (12128): Elaborating entity "com_xnor" for hierarchy "compare:inst48|com_xnor:inst2"
+Info (12128): Elaborating entity "7485" for hierarchy "compare:inst48|com_xnor:inst2|7485:inst5"
+Info (12130): Elaborated megafunction instantiation "compare:inst48|com_xnor:inst2|7485:inst5"
+Info (12128): Elaborating entity "f7485" for hierarchy "compare:inst48|com_xnor:inst2|7485:inst5|f7485:sub"
+Info (12131): Elaborated megafunction instantiation "compare:inst48|com_xnor:inst2|7485:inst5|f7485:sub", which is child of megafunction instantiation "compare:inst48|com_xnor:inst2|7485:inst5"
+Info (12128): Elaborating entity "inter" for hierarchy "inter:inst51"
+Info (12128): Elaborating entity "time" for hierarchy "time:inst67"
+Warning (275011): Block or symbol "com_xnor" of instance "inst4" overlaps another block or symbol
+Info (12128): Elaborating entity "cnt12" for hierarchy "time:inst67|cnt12:inst3"
+Info (12128): Elaborating entity "74390" for hierarchy "time:inst67|cnt12:inst3|74390:inst"
+Info (12130): Elaborated megafunction instantiation "time:inst67|cnt12:inst3|74390:inst"
+Info (12128): Elaborating entity "7432" for hierarchy "time:inst67|cnt12:inst3|7432:inst3"
+Info (12130): Elaborated megafunction instantiation "time:inst67|cnt12:inst3|7432:inst3"
+Info (12128): Elaborating entity "cnt60" for hierarchy "time:inst67|cnt60:inst1"
+Info (12128): Elaborating entity "cnt24" for hierarchy "time:inst67|cnt24:inst2"
+Info (12128): Elaborating entity "sys_choice" for hierarchy "time:inst67|sys_choice:inst12"
+Info (12128): Elaborating entity "74153" for hierarchy "time:inst67|sys_choice:inst12|74153:inst"
+Info (12130): Elaborated megafunction instantiation "time:inst67|sys_choice:inst12|74153:inst"
+Warning (12125): Using design file tiaop.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: tiaop
+Info (12128): Elaborating entity "tiaop" for hierarchy "tiaop:inst95"
+Info (12128): Elaborating entity "fre_div" for hierarchy "fre_div:inst"
+Info (12128): Elaborating entity "m100" for hierarchy "fre_div:inst|m100:inst1"
+Info (12128): Elaborating entity "jicun8" for hierarchy "jicun8:inst68"
+Warning (275011): Block or symbol "jicun4" of instance "inst1" overlaps another block or symbol
+Info (12128): Elaborating entity "jicun4" for hierarchy "jicun8:inst68|jicun4:inst4"
+Info (12128): Elaborating entity "jicun" for hierarchy "jicun8:inst68|jicun4:inst4|jicun:inst"
+Info (12128): Elaborating entity "74164" for hierarchy "jicun8:inst68|jicun4:inst4|jicun:inst|74164:inst"
+Info (12130): Elaborated megafunction instantiation "jicun8:inst68|jicun4:inst4|jicun:inst|74164:inst"
+Info (12128): Elaborating entity "fre_cin" for hierarchy "fre_cin:inst21"
+Warning (275009): Pin "clk_500hz_01" not connected
+Info (12128): Elaborating entity "74138" for hierarchy "fre_cin:inst21|74138:inst"
+Info (12130): Elaborated megafunction instantiation "fre_cin:inst21|74138:inst"
+Info (12128): Elaborating entity "display" for hierarchy "display:inst5"
+Info (12128): Elaborating entity "dig_select" for hierarchy "display:inst5|dig_select:inst4"
+Info (12128): Elaborating entity "cnt8" for hierarchy "display:inst5|cnt8:inst"
+Info (12128): Elaborating entity "decoder" for hierarchy "display:inst5|decoder:inst3"
+Info (12128): Elaborating entity "7448" for hierarchy "display:inst5|decoder:inst3|7448:inst"
+Info (12130): Elaborated megafunction instantiation "display:inst5|decoder:inst3|7448:inst"
+Info (12128): Elaborating entity "seg_select" for hierarchy "display:inst5|seg_select:inst1"
+Info (12128): Elaborating entity "74151" for hierarchy "display:inst5|seg_select:inst1|74151:inst"
+Info (12130): Elaborated megafunction instantiation "display:inst5|seg_select:inst1|74151:inst"
+Info (12128): Elaborating entity "f74151" for hierarchy "display:inst5|seg_select:inst1|74151:inst|f74151:sub"
+Info (12131): Elaborated megafunction instantiation "display:inst5|seg_select:inst1|74151:inst|f74151:sub", which is child of megafunction instantiation "display:inst5|seg_select:inst1|74151:inst"
+Warning (12125): Using design file pre_cout.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: pre_cout
+Info (12128): Elaborating entity "pre_cout" for hierarchy "pre_cout:inst93"
+Warning (12125): Using design file pre_cout2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: pre_cout2
+Info (12128): Elaborating entity "pre_cout2" for hierarchy "pre_cout:inst93|pre_cout2:inst13"
+Info (12128): Elaborating entity "chron" for hierarchy "chron:inst100"
+Info (12128): Elaborating entity "cnt100" for hierarchy "chron:inst100|cnt100:inst"
+Info (13014): Ignored 16 buffer(s)
+    Info (13017): Ignored 16 CASCADE buffer(s)
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer tiaop:inst95|74153:inst|10~0
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 251 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 218 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4666 megabytes
+    Info: Processing ended: Wed Dec 23 13:11:10 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+

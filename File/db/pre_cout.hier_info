@@ -1,0 +1,231 @@
+|pre_cout
+cout0_01[0] <= pre_cout2:inst13.cout_01[0]
+cout0_01[1] <= pre_cout2:inst13.cout_01[1]
+cout0_01[2] <= pre_cout2:inst13.cout_01[2]
+cout0_01[3] <= pre_cout2:inst13.cout_01[3]
+have_B_01 => pre_cout2:inst13.have_B_01
+have_B_01 => pre_cout2:inst14.have_B_01
+have_B_01 => pre_cout2:inst15.have_B_01
+have_B_01 => pre_cout2:inst16.have_B_01
+have_B_01 => pre_cout2:inst17.have_B_01
+have_B_01 => pre_cout2:inst18.have_B_01
+A0_01[0] => pre_cout2:inst13.A_01[0]
+A0_01[1] => pre_cout2:inst13.A_01[1]
+A0_01[2] => pre_cout2:inst13.A_01[2]
+A0_01[3] => pre_cout2:inst13.A_01[3]
+B0_01[0] => pre_cout2:inst13.B_01[0]
+B0_01[1] => pre_cout2:inst13.B_01[1]
+B0_01[2] => pre_cout2:inst13.B_01[2]
+B0_01[3] => pre_cout2:inst13.B_01[3]
+cout1_01[0] <= pre_cout2:inst14.cout_01[0]
+cout1_01[1] <= pre_cout2:inst14.cout_01[1]
+cout1_01[2] <= pre_cout2:inst14.cout_01[2]
+cout1_01[3] <= pre_cout2:inst14.cout_01[3]
+A1_01[0] => pre_cout2:inst14.A_01[0]
+A1_01[1] => pre_cout2:inst14.A_01[1]
+A1_01[2] => pre_cout2:inst14.A_01[2]
+A1_01[3] => pre_cout2:inst14.A_01[3]
+B1_01[0] => pre_cout2:inst14.B_01[0]
+B1_01[1] => pre_cout2:inst14.B_01[1]
+B1_01[2] => pre_cout2:inst14.B_01[2]
+B1_01[3] => pre_cout2:inst14.B_01[3]
+cout2_01[0] <= pre_cout2:inst15.cout_01[0]
+cout2_01[1] <= pre_cout2:inst15.cout_01[1]
+cout2_01[2] <= pre_cout2:inst15.cout_01[2]
+cout2_01[3] <= pre_cout2:inst15.cout_01[3]
+A2_01[0] => pre_cout2:inst15.A_01[0]
+A2_01[1] => pre_cout2:inst15.A_01[1]
+A2_01[2] => pre_cout2:inst15.A_01[2]
+A2_01[3] => pre_cout2:inst15.A_01[3]
+B2_01[0] => pre_cout2:inst15.B_01[0]
+B2_01[1] => pre_cout2:inst15.B_01[1]
+B2_01[2] => pre_cout2:inst15.B_01[2]
+B2_01[3] => pre_cout2:inst15.B_01[3]
+cout3_01[0] <= pre_cout2:inst16.cout_01[0]
+cout3_01[1] <= pre_cout2:inst16.cout_01[1]
+cout3_01[2] <= pre_cout2:inst16.cout_01[2]
+cout3_01[3] <= pre_cout2:inst16.cout_01[3]
+A3_01[0] => pre_cout2:inst16.A_01[0]
+A3_01[1] => pre_cout2:inst16.A_01[1]
+A3_01[2] => pre_cout2:inst16.A_01[2]
+A3_01[3] => pre_cout2:inst16.A_01[3]
+B3_01[0] => pre_cout2:inst16.B_01[0]
+B3_01[1] => pre_cout2:inst16.B_01[1]
+B3_01[2] => pre_cout2:inst16.B_01[2]
+B3_01[3] => pre_cout2:inst16.B_01[3]
+cout4_01[0] <= pre_cout2:inst17.cout_01[0]
+cout4_01[1] <= pre_cout2:inst17.cout_01[1]
+cout4_01[2] <= pre_cout2:inst17.cout_01[2]
+cout4_01[3] <= pre_cout2:inst17.cout_01[3]
+A4_01[0] => pre_cout2:inst17.A_01[0]
+A4_01[1] => pre_cout2:inst17.A_01[1]
+A4_01[2] => pre_cout2:inst17.A_01[2]
+A4_01[3] => pre_cout2:inst17.A_01[3]
+B4_01[0] => pre_cout2:inst17.B_01[0]
+B4_01[1] => pre_cout2:inst17.B_01[1]
+B4_01[2] => pre_cout2:inst17.B_01[2]
+B4_01[3] => pre_cout2:inst17.B_01[3]
+cout5_01[0] <= pre_cout2:inst18.cout_01[0]
+cout5_01[1] <= pre_cout2:inst18.cout_01[1]
+cout5_01[2] <= pre_cout2:inst18.cout_01[2]
+cout5_01[3] <= pre_cout2:inst18.cout_01[3]
+A5_01[0] => pre_cout2:inst18.A_01[0]
+A5_01[1] => pre_cout2:inst18.A_01[1]
+A5_01[2] => pre_cout2:inst18.A_01[2]
+A5_01[3] => pre_cout2:inst18.A_01[3]
+B5_01[0] => pre_cout2:inst18.B_01[0]
+B5_01[1] => pre_cout2:inst18.B_01[1]
+B5_01[2] => pre_cout2:inst18.B_01[2]
+B5_01[3] => pre_cout2:inst18.B_01[3]
+
+
+|pre_cout|pre_cout2:inst13
+cout_01[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B_01[0] => inst3.IN0
+B_01[1] => inst4.IN0
+B_01[2] => inst5.IN0
+B_01[3] => inst6.IN0
+have_B_01 => inst3.IN1
+have_B_01 => 7404:inst7.2
+have_B_01 => inst4.IN1
+have_B_01 => inst5.IN1
+have_B_01 => inst6.IN1
+A_01[0] => inst.IN0
+A_01[1] => inst55.IN0
+A_01[2] => inst1.IN0
+A_01[3] => inst2.IN0
+
+
+|pre_cout|pre_cout2:inst13|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|pre_cout|pre_cout2:inst14
+cout_01[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B_01[0] => inst3.IN0
+B_01[1] => inst4.IN0
+B_01[2] => inst5.IN0
+B_01[3] => inst6.IN0
+have_B_01 => inst3.IN1
+have_B_01 => 7404:inst7.2
+have_B_01 => inst4.IN1
+have_B_01 => inst5.IN1
+have_B_01 => inst6.IN1
+A_01[0] => inst.IN0
+A_01[1] => inst55.IN0
+A_01[2] => inst1.IN0
+A_01[3] => inst2.IN0
+
+
+|pre_cout|pre_cout2:inst14|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|pre_cout|pre_cout2:inst15
+cout_01[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B_01[0] => inst3.IN0
+B_01[1] => inst4.IN0
+B_01[2] => inst5.IN0
+B_01[3] => inst6.IN0
+have_B_01 => inst3.IN1
+have_B_01 => 7404:inst7.2
+have_B_01 => inst4.IN1
+have_B_01 => inst5.IN1
+have_B_01 => inst6.IN1
+A_01[0] => inst.IN0
+A_01[1] => inst55.IN0
+A_01[2] => inst1.IN0
+A_01[3] => inst2.IN0
+
+
+|pre_cout|pre_cout2:inst15|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|pre_cout|pre_cout2:inst16
+cout_01[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B_01[0] => inst3.IN0
+B_01[1] => inst4.IN0
+B_01[2] => inst5.IN0
+B_01[3] => inst6.IN0
+have_B_01 => inst3.IN1
+have_B_01 => 7404:inst7.2
+have_B_01 => inst4.IN1
+have_B_01 => inst5.IN1
+have_B_01 => inst6.IN1
+A_01[0] => inst.IN0
+A_01[1] => inst55.IN0
+A_01[2] => inst1.IN0
+A_01[3] => inst2.IN0
+
+
+|pre_cout|pre_cout2:inst16|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|pre_cout|pre_cout2:inst17
+cout_01[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B_01[0] => inst3.IN0
+B_01[1] => inst4.IN0
+B_01[2] => inst5.IN0
+B_01[3] => inst6.IN0
+have_B_01 => inst3.IN1
+have_B_01 => 7404:inst7.2
+have_B_01 => inst4.IN1
+have_B_01 => inst5.IN1
+have_B_01 => inst6.IN1
+A_01[0] => inst.IN0
+A_01[1] => inst55.IN0
+A_01[2] => inst1.IN0
+A_01[3] => inst2.IN0
+
+
+|pre_cout|pre_cout2:inst17|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|pre_cout|pre_cout2:inst18
+cout_01[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+cout_01[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B_01[0] => inst3.IN0
+B_01[1] => inst4.IN0
+B_01[2] => inst5.IN0
+B_01[3] => inst6.IN0
+have_B_01 => inst3.IN1
+have_B_01 => 7404:inst7.2
+have_B_01 => inst4.IN1
+have_B_01 => inst5.IN1
+have_B_01 => inst6.IN1
+A_01[0] => inst.IN0
+A_01[1] => inst55.IN0
+A_01[2] => inst1.IN0
+A_01[3] => inst2.IN0
+
+
+|pre_cout|pre_cout2:inst18|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+

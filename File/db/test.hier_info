@@ -1,0 +1,7 @@
+|test
+pin_name1 <= pin_name2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => pin_name1.DATAIN
+clk_sec_ge_01 => ~NO_FANOUT~
+clk_hour_shi_01 => ~NO_FANOUT~
+
+

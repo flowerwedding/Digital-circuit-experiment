@@ -1,0 +1,231 @@
+$comment
+	File created using the following command:
+		vcd file compare.msim.vcd -direction
+$end
+$date
+	Wed Dec 23 13:15:15 2020
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module compare_vlg_vec_tst $end
+$var reg 4 ! ala_hour_ge_01 [3:0] $end
+$var reg 4 " ala_hour_shi_01 [3:0] $end
+$var reg 4 # ala_min_ge_01 [3:0] $end
+$var reg 4 $ ala_min_shi_01 [3:0] $end
+$var reg 4 % ala_sec_ge_01 [3:0] $end
+$var reg 4 & ala_sec_shi_01 [3:0] $end
+$var reg 4 ' clk_hour_ge_01 [3:0] $end
+$var reg 4 ( clk_hour_shi_01 [3:0] $end
+$var reg 4 ) clk_min_ge_01 [3:0] $end
+$var reg 4 * clk_min_shi_01 [3:0] $end
+$var reg 4 + clk_sec_ge_01 [3:0] $end
+$var reg 4 , clk_sec_shi_01 [3:0] $end
+$var wire 1 - ans_01 $end
+$var wire 1 . sampler $end
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var tri1 1 2 devclrn $end
+$var tri1 1 3 devpor $end
+$var tri1 1 4 devoe $end
+$var wire 1 5 ans_01~output_o $end
+$var wire 1 6 clk_sec_ge_01[3]~input_o $end
+$var wire 1 7 clk_sec_ge_01[2]~input_o $end
+$var wire 1 8 ala_sec_ge_01[2]~input_o $end
+$var wire 1 9 ala_sec_ge_01[3]~input_o $end
+$var wire 1 : inst6~3_combout $end
+$var wire 1 ; ala_sec_ge_01[0]~input_o $end
+$var wire 1 < clk_sec_ge_01[0]~input_o $end
+$var wire 1 = clk_sec_ge_01[1]~input_o $end
+$var wire 1 > ala_sec_ge_01[1]~input_o $end
+$var wire 1 ? inst6~2_combout $end
+$var wire 1 @ clk_min_ge_01[0]~input_o $end
+$var wire 1 A ala_min_ge_01[1]~input_o $end
+$var wire 1 B ala_min_ge_01[0]~input_o $end
+$var wire 1 C clk_min_ge_01[1]~input_o $end
+$var wire 1 D inst6~0_combout $end
+$var wire 1 E clk_min_ge_01[2]~input_o $end
+$var wire 1 F ala_min_ge_01[2]~input_o $end
+$var wire 1 G clk_min_ge_01[3]~input_o $end
+$var wire 1 H ala_min_ge_01[3]~input_o $end
+$var wire 1 I inst6~1_combout $end
+$var wire 1 J inst6~4_combout $end
+$var wire 1 K ala_min_shi_01[1]~input_o $end
+$var wire 1 L clk_min_shi_01[0]~input_o $end
+$var wire 1 M ala_min_shi_01[0]~input_o $end
+$var wire 1 N clk_min_shi_01[1]~input_o $end
+$var wire 1 O inst6~7_combout $end
+$var wire 1 P ala_sec_shi_01[3]~input_o $end
+$var wire 1 Q ala_sec_shi_01[2]~input_o $end
+$var wire 1 R clk_sec_shi_01[2]~input_o $end
+$var wire 1 S clk_sec_shi_01[3]~input_o $end
+$var wire 1 T inst6~6_combout $end
+$var wire 1 U ala_min_shi_01[2]~input_o $end
+$var wire 1 V ala_min_shi_01[3]~input_o $end
+$var wire 1 W clk_min_shi_01[2]~input_o $end
+$var wire 1 X clk_min_shi_01[3]~input_o $end
+$var wire 1 Y inst6~8_combout $end
+$var wire 1 Z ala_sec_shi_01[1]~input_o $end
+$var wire 1 [ clk_sec_shi_01[1]~input_o $end
+$var wire 1 \ clk_sec_shi_01[0]~input_o $end
+$var wire 1 ] ala_sec_shi_01[0]~input_o $end
+$var wire 1 ^ inst6~5_combout $end
+$var wire 1 _ inst6~9_combout $end
+$var wire 1 ` ala_hour_ge_01[0]~input_o $end
+$var wire 1 a clk_hour_ge_01[1]~input_o $end
+$var wire 1 b ala_hour_ge_01[1]~input_o $end
+$var wire 1 c clk_hour_ge_01[0]~input_o $end
+$var wire 1 d inst6~10_combout $end
+$var wire 1 e clk_hour_shi_01[0]~input_o $end
+$var wire 1 f ala_hour_shi_01[1]~input_o $end
+$var wire 1 g ala_hour_shi_01[0]~input_o $end
+$var wire 1 h clk_hour_shi_01[1]~input_o $end
+$var wire 1 i inst6~12_combout $end
+$var wire 1 j clk_hour_shi_01[2]~input_o $end
+$var wire 1 k clk_hour_shi_01[3]~input_o $end
+$var wire 1 l ala_hour_shi_01[3]~input_o $end
+$var wire 1 m ala_hour_shi_01[2]~input_o $end
+$var wire 1 n inst6~13_combout $end
+$var wire 1 o ala_hour_ge_01[3]~input_o $end
+$var wire 1 p clk_hour_ge_01[3]~input_o $end
+$var wire 1 q clk_hour_ge_01[2]~input_o $end
+$var wire 1 r ala_hour_ge_01[2]~input_o $end
+$var wire 1 s inst6~11_combout $end
+$var wire 1 t inst6~14_combout $end
+$var wire 1 u inst6~15_combout $end
+$var wire 1 v inst6~15clkctrl_outclk $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 !
+b0 "
+b1111 #
+b0 $
+b1111 %
+b0 &
+b1111 '
+b0 (
+b1111 )
+b0 *
+b1111 +
+b1111 ,
+x-
+x.
+0/
+10
+x1
+12
+13
+14
+x5
+16
+17
+18
+19
+x:
+1;
+1<
+1=
+1>
+x?
+1@
+1A
+1B
+1C
+xD
+1E
+1F
+1G
+1H
+xI
+xJ
+0K
+0L
+0M
+0N
+xO
+0P
+0Q
+1R
+1S
+xT
+0U
+0V
+0W
+0X
+xY
+0Z
+1[
+1\
+0]
+x^
+x_
+1`
+1a
+1b
+1c
+xd
+0e
+0f
+0g
+0h
+xi
+0j
+0k
+0l
+0m
+xn
+1o
+1p
+1q
+1r
+xs
+xt
+xu
+xv
+$end
+#3719
+0^
+#3896
+1s
+#4134
+0T
+#4135
+0_
+#4480
+1O
+#4511
+1d
+#4601
+1?
+#4632
+1I
+#4638
+1Y
+#4654
+1i
+#4661
+1:
+#4852
+1n
+#5080
+1D
+#5301
+1t
+#5645
+1J
+#6339
+0u
+#9035
+0v
+#13017
+05
+0-
+#1000000

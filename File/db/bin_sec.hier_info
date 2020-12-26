@@ -1,0 +1,154 @@
+|bin_sec
+ge_01[0] <= cnt60:inst1.ge_01[3]
+ge_01[1] <= cnt60:inst1.ge_01[2]
+ge_01[2] <= cnt60:inst1.ge_01[1]
+ge_01[3] <= cnt60:inst1.ge_01[0]
+clk_01 => bin_min:inst.clk_01
+shi_01[0] <= cnt60:inst1.shi_01[0]
+shi_01[1] <= cnt60:inst1.shi_01[1]
+shi_01[2] <= cnt60:inst1.shi_01[2]
+shi_01[3] <= cnt60:inst1.shi_01[3]
+
+
+|bin_sec|cnt60:inst1
+CO_01 <= 7490:inst4.QC
+shi_01[0] <= <GND>
+shi_01[1] <= 7490:inst4.QB
+shi_01[2] <= 7490:inst4.QC
+shi_01[3] <= 7490:inst4.QD
+ge_01[3] <= 7490:inst.QD
+ge_01[2] <= 7490:inst.QC
+ge_01[1] <= 7490:inst.QB
+ge_01[0] <= 7490:inst.QA
+clk_01 => 7490:inst.CLKA
+
+
+|bin_sec|cnt60:inst1|7490:inst4
+QA <= 7.DB_MAX_OUTPUT_PORT_TYPE
+CLRA => 9.IN0
+CLRB => 9.IN1
+CLKA => 32.IN0
+SET9A => 8.IN0
+SET9B => 8.IN1
+QB <= 11.DB_MAX_OUTPUT_PORT_TYPE
+CLKB => 33.IN0
+QC <= 14.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bin_sec|cnt60:inst1|7490:inst
+QA <= 7.DB_MAX_OUTPUT_PORT_TYPE
+CLRA => 9.IN0
+CLRB => 9.IN1
+CLKA => 32.IN0
+SET9A => 8.IN0
+SET9B => 8.IN1
+QB <= 11.DB_MAX_OUTPUT_PORT_TYPE
+CLKB => 33.IN0
+QC <= 14.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bin_sec|bin_min:inst
+CO_01 <= cnt60:inst2.CO_01
+clk_01 => bin_hour:inst3.clk_01
+ge_01[0] <= cnt60:inst2.ge_01[3]
+ge_01[1] <= cnt60:inst2.ge_01[2]
+ge_01[2] <= cnt60:inst2.ge_01[1]
+ge_01[3] <= cnt60:inst2.ge_01[0]
+shi_01[0] <= cnt60:inst2.shi_01[0]
+shi_01[1] <= cnt60:inst2.shi_01[1]
+shi_01[2] <= cnt60:inst2.shi_01[2]
+shi_01[3] <= cnt60:inst2.shi_01[3]
+
+
+|bin_sec|bin_min:inst|cnt60:inst2
+CO_01 <= 7490:inst4.QC
+shi_01[0] <= <GND>
+shi_01[1] <= 7490:inst4.QB
+shi_01[2] <= 7490:inst4.QC
+shi_01[3] <= 7490:inst4.QD
+ge_01[3] <= 7490:inst.QD
+ge_01[2] <= 7490:inst.QC
+ge_01[1] <= 7490:inst.QB
+ge_01[0] <= 7490:inst.QA
+clk_01 => 7490:inst.CLKA
+
+
+|bin_sec|bin_min:inst|cnt60:inst2|7490:inst4
+QA <= 7.DB_MAX_OUTPUT_PORT_TYPE
+CLRA => 9.IN0
+CLRB => 9.IN1
+CLKA => 32.IN0
+SET9A => 8.IN0
+SET9B => 8.IN1
+QB <= 11.DB_MAX_OUTPUT_PORT_TYPE
+CLKB => 33.IN0
+QC <= 14.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bin_sec|bin_min:inst|cnt60:inst2|7490:inst
+QA <= 7.DB_MAX_OUTPUT_PORT_TYPE
+CLRA => 9.IN0
+CLRB => 9.IN1
+CLKA => 32.IN0
+SET9A => 8.IN0
+SET9B => 8.IN1
+QB <= 11.DB_MAX_OUTPUT_PORT_TYPE
+CLKB => 33.IN0
+QC <= 14.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bin_sec|bin_min:inst|bin_hour:inst3
+CO <= cnt24:inst.CO
+clk_01 => cnt24:inst.clk_01
+ge_01[0] <= cnt24:inst.ge_01[0]
+ge_01[1] <= cnt24:inst.ge_01[1]
+ge_01[2] <= cnt24:inst.ge_01[2]
+ge_01[3] <= cnt24:inst.ge_01[3]
+shi_01[0] <= cnt24:inst.shi_01[0]
+shi_01[1] <= cnt24:inst.shi_01[1]
+shi_01[2] <= cnt24:inst.shi_01[2]
+shi_01[3] <= cnt24:inst.shi_01[3]
+
+
+|bin_sec|bin_min:inst|bin_hour:inst3|cnt24:inst
+CO <= 74390:inst.2QB
+shi_01[0] <= 74390:inst.2QA
+shi_01[1] <= 74390:inst.2QB
+shi_01[2] <= 74390:inst.2QC
+shi_01[3] <= 74390:inst.2QD
+ge_01[0] <= 74390:inst.1QA
+ge_01[1] <= 74390:inst.1QB
+ge_01[2] <= 74390:inst.1QC
+ge_01[3] <= 74390:inst.1QD
+clk_01 => 74390:inst.1CLKA
+
+
+|bin_sec|bin_min:inst|bin_hour:inst3|cnt24:inst|74390:inst
+2QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+2CLR => 25.IN0
+2CLKA => 24.IN0
+2QB <= 33.DB_MAX_OUTPUT_PORT_TYPE
+2QD <= 31.DB_MAX_OUTPUT_PORT_TYPE
+2QC <= 32.DB_MAX_OUTPUT_PORT_TYPE
+2CLKB => 27.IN0
+2CLKB => 29.IN1
+1QD <= 3.DB_MAX_OUTPUT_PORT_TYPE
+1CLR => 22.IN0
+1QC <= 5.DB_MAX_OUTPUT_PORT_TYPE
+1QB <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1CLKB => 20.IN1
+1CLKB => 17.IN0
+1QA <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1CLKA => 23.IN0
+
+
+|bin_sec|bin_min:inst|bin_hour:inst3|cnt24:inst|7408:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+

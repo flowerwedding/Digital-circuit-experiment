@@ -1,0 +1,50 @@
+|bin_hour
+ge_01[0] <= cnt24:inst.ge_01[0]
+ge_01[1] <= cnt24:inst.ge_01[1]
+ge_01[2] <= cnt24:inst.ge_01[2]
+ge_01[3] <= cnt24:inst.ge_01[3]
+clk_01 => cnt24:inst.clk_01
+shi_01[0] <= cnt24:inst.shi_01[0]
+shi_01[1] <= cnt24:inst.shi_01[1]
+shi_01[2] <= cnt24:inst.shi_01[2]
+shi_01[3] <= cnt24:inst.shi_01[3]
+
+
+|bin_hour|cnt24:inst
+CO <= 74390:inst.2QB
+shi_01[0] <= 74390:inst.2QA
+shi_01[1] <= 74390:inst.2QB
+shi_01[2] <= 74390:inst.2QC
+shi_01[3] <= 74390:inst.2QD
+ge_01[0] <= 74390:inst.1QA
+ge_01[1] <= 74390:inst.1QB
+ge_01[2] <= 74390:inst.1QC
+ge_01[3] <= 74390:inst.1QD
+clk_01 => 74390:inst.1CLKA
+
+
+|bin_hour|cnt24:inst|74390:inst
+2QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+2CLR => 25.IN0
+2CLKA => 24.IN0
+2QB <= 33.DB_MAX_OUTPUT_PORT_TYPE
+2QD <= 31.DB_MAX_OUTPUT_PORT_TYPE
+2QC <= 32.DB_MAX_OUTPUT_PORT_TYPE
+2CLKB => 27.IN0
+2CLKB => 29.IN1
+1QD <= 3.DB_MAX_OUTPUT_PORT_TYPE
+1CLR => 22.IN0
+1QC <= 5.DB_MAX_OUTPUT_PORT_TYPE
+1QB <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1CLKB => 20.IN1
+1CLKB => 17.IN0
+1QA <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1CLKA => 23.IN0
+
+
+|bin_hour|cnt24:inst|7408:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+

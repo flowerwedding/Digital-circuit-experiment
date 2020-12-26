@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 328 176)
+	(text "fre_cin" (rect 5 0 60 18)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 140 33 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "key_01[7..0]" (rect 0 0 100 18)(font "Arial" (font_size 8)))
+		(text "key_01[7..0]" (rect 21 27 121 45)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "swa_01" (rect 0 0 64 18)(font "Arial" (font_size 8)))
+		(text "swa_01" (rect 21 43 85 61)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "swb_01" (rect 0 0 64 18)(font "Arial" (font_size 8)))
+		(text "swb_01" (rect 21 59 85 77)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "clk_500hz_01" (rect 0 0 114 18)(font "Arial" (font_size 8)))
+		(text "clk_500hz_01" (rect 21 75 135 93)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 312 32)
+		(output)
+		(text "sec_ge_01[3..0]" (rect 0 0 133 18)(font "Arial" (font_size 8)))
+		(text "sec_ge_01[3..0]" (rect 158 27 291 45)(font "Arial" (font_size 8)))
+		(line (pt 312 32)(pt 296 32)(line_width 3))
+	)
+	(port
+		(pt 312 48)
+		(output)
+		(text "min_ge_01[3..0]" (rect 0 0 133 18)(font "Arial" (font_size 8)))
+		(text "min_ge_01[3..0]" (rect 158 43 291 61)(font "Arial" (font_size 8)))
+		(line (pt 312 48)(pt 296 48)(line_width 3))
+	)
+	(port
+		(pt 312 64)
+		(output)
+		(text "hour_ge_01[3..0]" (rect 0 0 139 18)(font "Arial" (font_size 8)))
+		(text "hour_ge_01[3..0]" (rect 152 59 291 77)(font "Arial" (font_size 8)))
+		(line (pt 312 64)(pt 296 64)(line_width 3))
+	)
+	(port
+		(pt 312 80)
+		(output)
+		(text "sec_shi_01[3..0]" (rect 0 0 135 18)(font "Arial" (font_size 8)))
+		(text "sec_shi_01[3..0]" (rect 156 75 291 93)(font "Arial" (font_size 8)))
+		(line (pt 312 80)(pt 296 80)(line_width 3))
+	)
+	(port
+		(pt 312 96)
+		(output)
+		(text "min_shi_01[3..0]" (rect 0 0 135 18)(font "Arial" (font_size 8)))
+		(text "min_shi_01[3..0]" (rect 156 91 291 109)(font "Arial" (font_size 8)))
+		(line (pt 312 96)(pt 296 96)(line_width 3))
+	)
+	(port
+		(pt 312 112)
+		(output)
+		(text "hour_shi_01[3..0]" (rect 0 0 141 18)(font "Arial" (font_size 8)))
+		(text "hour_shi_01[3..0]" (rect 150 107 291 125)(font "Arial" (font_size 8)))
+		(line (pt 312 112)(pt 296 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 296 144))
+	)
+)
